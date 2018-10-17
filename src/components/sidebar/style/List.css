@@ -1,0 +1,23 @@
+.list-ul li {
+  list-style: none;
+  margin: 24px;
+  font-size: .9em;
+}
+.list-ul a {
+  text-decoration: none;
+}
+.list-ul a:hover,
+.list-ul a:focus {
+  color: #20a0ff;
+}
+.list-ul {
+  margin: 0;
+  padding-left: 8px;
+
+}
+.list-tip, .list-ul a {
+  color: #5e6d82;
+}
+.list-tip {
+  font-size: 1.1em;
+}

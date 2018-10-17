@@ -1,0 +1,30 @@
+/* .quick-start {
+  vertical-align: top;
+  display: inline-block;
+  float: right;
+} */
+.quick-start-block p,
+.quick-start-block code {
+  margin: 2em 0;
+  font-size: 14px;
+  color: #5e6d82;
+}
+.quick-start h2 {
+  font-weight: normal;
+  color: #1f2f3d;
+}
+.quick-start h3 {
+  font-weight: normal;
+  color: #1f2f3d;
+}
+.quick-start-block code {
+  margin-left: 30px;
+}
+.quick-start-block {
+  margin: 4em 0;
+}
+.quick-start .language-markup {
+  padding: 0!important;
+  margin: 0!important;
+  margin-top: -30px!important;
+}

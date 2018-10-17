@@ -1,0 +1,30 @@
+.show-icon > div {
+  padding: 10px;
+  border: 1px solid #eee;
+  display: inline-block;
+}
+.icon-list  ul {
+  display: inline-block;
+  width: 600px;
+  padding: 0;
+
+}
+.icon-list li i {
+  font-size: 3em;
+  width: 85px;
+  color: #5e6d82;
+}
+.icon-list li {
+  float: left;
+  color: #666;
+  height: 85px;
+  font-size: 13px;
+  list-style: none;
+  line-height: 85px;
+  text-align: center;
+  outline: 1px solid #eee;
+  transition: color .15s linear;
+}
+.show-icon button {
+  color: white;
+}

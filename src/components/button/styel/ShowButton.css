@@ -1,0 +1,17 @@
+.color-button div {
+  margin: 20px;
+}
+.button-group {
+  float: right;
+}
+.button-groups {
+  padding-left: 20px;
+}
+.show-button .wb-button-group {
+  margin-left: 20px;
+}
+.icon-button button,
+.icon-button i,
+.button-groups button {
+  color: white;
+}

@@ -1,0 +1,42 @@
+.header {
+  color: white;
+  overflow: hidden;
+  background-color: #20a0ff;
+  min-width: 900px;
+}
+.header > div {
+  min-width: 900px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.header, h1, .header span { 
+  height: 80px;
+  box-sizing: border-box;
+}
+.header span, h1 {
+  display: inline-block;
+  line-height: 80px;
+}
+
+.header span {
+  float: right;
+  margin-right: 40px;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-bottom: 5px solid rgba(255, 255, 255, .5);
+}
+
+h1 {
+  margin: 0;
+  padding-left: 30px;
+}
+
+h1::after {
+  top: -15px;
+  font-size: .6em;
+  content: "react";
+  margin-left: 5px;
+  position: relative;
+  display: inline-block;
+  transform: rotateZ(10deg);
+}

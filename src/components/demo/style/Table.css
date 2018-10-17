@@ -1,0 +1,19 @@
+table {
+  text-align: left;
+  color: #5e6d82;
+  margin: 50px 0;
+  border-collapse: collapse;
+}
+tbody {
+  font-size: .8em;
+}
+thead{
+  background-color: #eaeefb;
+}
+thead th {
+  padding: 8px 50px 8px 20px
+}
+td {
+  border-bottom: 1px solid #eaeefb;
+  padding: 20px 20px 10px;
+}
