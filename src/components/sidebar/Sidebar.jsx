@@ -25,10 +25,11 @@ class Sidebar extends Component {
           name: 'Form',
           list: [
             {introduce: 'Radio 单选框', path: '/radio'},
+            {introduce: 'Input 输入框', path: '/input'},
             {introduce: 'Input Number 计数器', path: '/input-Number'},
             {introduce: 'Select 选择器', path: '/select'},
             {introduce: 'Switch 开关', path: '/switch'},
-            {introduce: 'Slider 滑块', path: '/slider'},
+            {introduce: 'Slider 滑动条', path: '/slider'},
           ]
         },
         {
@@ -55,11 +56,11 @@ class Sidebar extends Component {
   }
 
   render() {
-   return <div className = "sidebar">
+   return <aside className = "sidebar">
      {
        this.state.list.map(item => <List key = {item.name} name = {item.name} list = {item.list} />)
      }
-     </div>;
+     </aside>;
   }
 }
 

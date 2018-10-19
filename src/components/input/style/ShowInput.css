@@ -1,0 +1,9 @@
+.show-input .demo-block header > div {
+  width: 300px;
+}
+.size-input {
+  white-space: initial;
+}
+.size-input .wb-input-default {
+  margin: 5px;
+}

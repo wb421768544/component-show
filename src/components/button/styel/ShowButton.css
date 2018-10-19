@@ -4,8 +4,9 @@
 .button-group {
   float: right;
 }
-.button-groups {
+.button-groups button{
   padding-left: 20px;
+  margin: 0!important;
 }
 .show-button .wb-button-group {
   margin-left: 20px;
@@ -14,4 +15,7 @@
 .icon-button i,
 .button-groups button {
   color: white;
+}
+.show-button .demo-block button {
+  margin: 0 1em;
 }

@@ -17,7 +17,6 @@ class Demo extends Component {
   handleClick = () => {
     this.ref.current.style.height = this.state.status? '0px': '300px';
     this.setState({status: !this.state.status});
-
   }
 
   handleMouseEnter = () => {
@@ -42,7 +41,7 @@ class Demo extends Component {
   render() {
     return <div className = "demo-block">
       <header>{this.props.code}</header>
-      <div className = "code-demo " ref = {this.ref}>
+      <div className = "code-demo" ref = {this.ref}>
         <pre>
             <code className="language-markup">
             {this.props.codeString}

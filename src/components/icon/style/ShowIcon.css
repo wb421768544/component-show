@@ -25,6 +25,12 @@
   outline: 1px solid #eee;
   transition: color .15s linear;
 }
-.show-icon button {
+.show-icon .demo-block button {
   color: white;
+  margin: 0 1em;
+}
+
+.show-icon .demo-block i {
+  margin: 0 1em;
+  font-size: 1.5em;
 }

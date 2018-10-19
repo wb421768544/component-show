@@ -19,7 +19,7 @@ class Table extends Component {
         </thead>
         <tbody>
         {
-          this.props.paramList.map((item, index) => <tr key = {index}>{item.map(info => <td key = {info}>{info}</td>)}</tr>)
+          this.props.paramList.map((item, index) => <tr key = {index}>{item.map((info, index) => <td key = {index}>{info}</td>)}</tr>)
         }
         </tbody>
       </table>

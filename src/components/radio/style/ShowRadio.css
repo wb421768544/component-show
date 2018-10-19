@@ -1,0 +1,12 @@
+.demo-block header > div {
+  margin-left: 20px;
+}
+.demo-block .wb-radio-label {
+  margin: 10px;
+}
+.radio-button-group .wb-radio-label {
+  margin: 0;
+}
+.demo-block .wb-radio-group{
+  margin: 10px;
+}

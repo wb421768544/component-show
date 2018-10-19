@@ -2,21 +2,45 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 
-
-
-
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import QuickStart from './components/quick-start/QuickStart';
 import ShowIcon from './components/icon/ShowIcon';
 import ShowButton from './components/button/ShowButton';
-
-// import {
-//   Button, Radio, InputNumber, Select, Switch, Slider, Tag, Alert, Notification, Dialog
-// } from 'wb-react-ui';
-
+import ShowRadio from './components/radio/ShowRadio';
+import ShowInput from './components/input/ShowInput';
+import ShowInputNumber from './components/input-number/ShowInputNumber';
+import ShowSelect from './components/select/ShowSelect';
+import ShowSwitch from './components/switch/ShowSwitch';
+import ShowSlider from './components/slider/ShowSlider';
+import ShowTag from './components/tag/ShowTag';
+import ShowAlert from './components/alert/ShowAlert';
+import ShowNotification from './components/notification/ShowNotification';
+import ShowDialog from './components/dialog/ShowDialog';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      components: [
+        {path: '/quick-start', component: QuickStart},
+        {path: '/icon', component: ShowIcon},
+        {path: '/button', component: ShowButton},
+        {path: '/radio', component: ShowRadio},
+        {path: '/input', component: ShowInput},
+        {path: '/input-number', component: ShowInputNumber},
+        {path: '/select', component: ShowSelect},
+        {path: '/switch', component: ShowSwitch},
+        {path: '/slider', component: ShowSlider},
+        {path: '/tag', component: ShowTag},
+        {path: '/alert', component: ShowAlert},
+        {path: '/notification', component: ShowNotification},
+        {path: '/dialog', component: ShowDialog},
+      ]
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -26,9 +50,9 @@ class App extends Component {
             <div className = "container">
               <Sidebar />
               <div className = "view">
-                <Route path = "/quick-start" component = {QuickStart} />
-                <Route path = "/icon" component = {ShowIcon} />
-                <Route path = "/button" component = {ShowButton} />
+              {
+                this.state.components.map((item, index) => <Route key = {index} path = {item.path} component = {item.component} />)
+              }
               </div>
             </div>
           </React.Fragment>
@@ -39,23 +63,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-//     <div className="highlight">
-//         <pre>
-//            <code className="language-markup">
-//            {`
-//           <label class="select">
-//           <select class="selector">
-//               <option value="1">1</option>
-//               <option value="2">2</option>
-//               <option value="3">3</option>
-//               <option value="4">4</option>
-//               <option value="5">5</option>
-//            </select>
-//           </label>
-//            `}
-//            </code>
-//        </pre>
-//    </div>

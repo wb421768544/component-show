@@ -17,7 +17,7 @@ class ShowButton extends Component {
         ['icon', '按钮图标对应图标的类名', 'string', '——', '——'],
         ['nativeType', '原生 type 属性', 'string', 'button, submit, reset', 'button'],
       ]
-    }
+    };
   }
 
   render() {
