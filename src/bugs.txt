@@ -12,3 +12,6 @@ Switch 的onChange事件在没有提供onValue offValue的时候 回调参数不
 Dialog在消失的时候样式有点问题
 
 Slider 的min有bug   vertical属性没有实现    name忘加了
+
+ShowTooltip的z-index太小, .right .left的margin等内容优先级应该定高一些
+修改button的margin   气泡的剪头会变

@@ -1,0 +1,18 @@
+.show-tooltip .top,
+.show-tooltip .bottom {
+  margin-left: 100px;
+}
+.show-tooltip {
+  position: relative;
+}
+.show-tooltip .wb-tooltip {
+  margin: 5px;
+}
+.show-tooltip .left-block ,
+.show-tooltip .right-block{
+  width: 66px;
+  display: inline-block;
+}
+.show-tooltip .right-block {
+  margin-left: 260px;
+}

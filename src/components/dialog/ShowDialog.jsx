@@ -13,6 +13,18 @@ class ShowDialog extends Component {
       visible2: false,
       visible3: false,
       visible4: false,
+      params: [
+        ['title', 'Dialog 的标题', 'string', '——', '——'],
+        ['size', 'Dialog 的大小', 'string', 'tiny, small, large, full', 'tiny'],
+        ['top', 'Dialog CSS 中的 top 值', 'string', '——', '15%'],
+        ['modal', '是否需要遮罩层', 'boolean', 'true, false', 'true'],
+        ['closeOnClickModal', '是否可以通过点击 modal 关闭 Dialog', 'boolean', 'true, false', 'false'],
+        ['closeOnPressEscape', '是否可以通过按下 ESC 关闭 Dialog', 'boolean', 'true, false', 'true'],
+      ],
+      paramOfEvents: [
+        ['onOpen', 'Dialog 关闭的回调', 'function', '——', '——'],
+        ['onClose', 'Dialog 打开的回调, 必须提供', 'function', '——', '——'],
+      ]
     };
   }
 
@@ -225,6 +237,10 @@ class ShowDialog extends Component {
   </div>
         `}
       />
+      <h3>Attributes</h3>
+      <Demo.Table paramList = {this.state.params} />
+      <h3>Events Attributes</h3>
+      <Demo.Table paramList = {this.state.paramOfEvents} />
     </div>;
   }
 }

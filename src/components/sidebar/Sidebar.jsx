@@ -48,7 +48,8 @@ class Sidebar extends Component {
         {
           name: 'Others',
           list: [
-            {introduce: 'Dialog 对话框', path: '/dialog'}
+            {introduce: 'Dialog 对话框', path: '/dialog'},
+            {introduce: 'Tooltip 文字提示', path: '/tooltip'},
           ]
         }
       ]

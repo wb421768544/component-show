@@ -17,6 +17,7 @@ import ShowTag from './components/tag/ShowTag';
 import ShowAlert from './components/alert/ShowAlert';
 import ShowNotification from './components/notification/ShowNotification';
 import ShowDialog from './components/dialog/ShowDialog';
+import ShowTooltip from './components/tooltip/ShowTooltip';
 
 class App extends Component {
 
@@ -37,6 +38,7 @@ class App extends Component {
         {path: '/alert', component: ShowAlert},
         {path: '/notification', component: ShowNotification},
         {path: '/dialog', component: ShowDialog},
+        {path: '/tooltip', component: ShowTooltip},
       ]
     };
   }

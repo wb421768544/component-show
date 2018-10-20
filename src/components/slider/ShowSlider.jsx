@@ -19,7 +19,6 @@ class ShowSlider extends Component {
         ['buttonColor', '滚动条按钮的颜色', 'string', '——', '#20a0ff'],
         ['selectedColor', '滚动条选中区域的颜色', 'string', '——', '#20a0ff'],
         ['unselectedColor', '滚动条未选中区域的颜色', 'string', '——', '#e4e8f1'],
-
       ],
       paramsOfEvents: [
         ['onChange', '拖动的时候触发，也就是值改变的时候, 改变后的值作为参数', 'function', '——', '——'],
