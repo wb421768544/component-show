@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/header/Header';
@@ -43,10 +43,14 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    window.location.hash = 'quick-start';
+  }
+
   render() {
     return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <React.Fragment>
             <Route path = "/" component = {Header} />
             <div className = "container">
@@ -58,7 +62,7 @@ class App extends Component {
               </div>
             </div>
           </React.Fragment>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
