@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Prism from 'prismjs';
+import 'prismjs/themes/prism.css';
 import './style/Demo.css';
 
 class Demo extends Component {
