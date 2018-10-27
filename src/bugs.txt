@@ -1,17 +1,15 @@
 Radio.Group的disabled用不了？
-Input的icon在外面，而且在icon上的事件没有写吗？
-BUtton里面添加<i>间距有点大  并且Button.Group的border有点问题
-InputNumber数字的padding-left太小,step和defaultValue的一些组合无法取到边界值  border也有点问题
-INput的onChange等属性没有进行类型判断
 
-Switch的高度有点低，value好像反了  不对  好像根本就没提供value
+  border也有点问题
 
-Switch 的onChange事件在没有提供onValue offValue的时候 回调参数不起作用, allowFocus的时候没有outline
-默认width好像也没写，color默认也么有
+Input的icon在外面，而且在icon上的事件没有写吗？√提供onIconClick以及获取icon索引的方法getIconRef
+INput的onChange等属性没有进行类型判断√
+Switch的高度有点低，value好像反了  不对  好像根本就没提供value√
+Switch 的onChange事件在没有提供onValue offValue的时候 回调参数不起作用, allowFocus的时候没有outline√
+Slider 的min有bug    name忘加了√
+InputNumber数字的padding-left太小,step和defaultValue的一些组合无法取到边界值√原生也是无法取到某些值
 
 Dialog在消失的时候样式有点问题
 
-Slider 的min有bug   vertical属性没有实现    name忘加了
+Switch   vertical属性没有实现
 
-ShowTooltip的z-index太小, .right .left的margin等内容优先级应该定高一些
-修改button的margin   气泡的剪头会变

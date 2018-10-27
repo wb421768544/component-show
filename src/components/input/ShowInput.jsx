@@ -44,7 +44,7 @@ class ShowInput extends Component {
       <h3>禁用状态</h3>
       <Demo
         code = {<div>
-          <Input disabled placeholder="请输入内容" />
+          <Input nativeProps = {{disabled: true}} placeholder="请输入内容" />
         </div>}
         codeString = {`
 /** 
