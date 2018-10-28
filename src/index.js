@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
-import 'prismjs/themes/prism.css';
 import 'wb-react-ui/build/css/index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

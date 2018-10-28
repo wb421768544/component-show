@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style/ShowIcon.css';
-import { Button } from 'wb-react-ui';
+import { Button, Tooltip } from 'wb-react-ui';
 
 import Demo from '../demo/Demo';
 
@@ -59,9 +59,11 @@ class ShowIcon extends Component {
       <h3>图标集合</h3>
       <div className = "icon-list">
         <ul>
-          {
-            this.state.iconList.map(icon => <li key = {icon}><i className = {'icon-' + icon} /></li>)
-          }
+          {this.state.iconList.map(icon => (
+              <Tooltip key = {icon} content = {'icon-' + icon} placement = "bottom">
+                <li><i className = {'icon-' + icon} /></li>
+              </Tooltip>
+            ))}
         </ul>
       </div>
     </div>;

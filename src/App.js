@@ -44,7 +44,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.location.hash = 'quick-start';
+    if(window.location.hash === '#/') {
+      window.location.hash = '#/quick-start';
+    }
   }
 
   render() {
