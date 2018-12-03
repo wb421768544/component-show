@@ -21,6 +21,10 @@ class ShowTag extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Tag';
+  }
+
   render() {
     return <div className = "show-tag">
       <h2>Tag 标签</h2>

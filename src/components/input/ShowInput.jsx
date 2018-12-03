@@ -21,6 +21,10 @@ class ShowInput extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Input';
+  }
+
   render() {
     return <div className = "show-input">
       <h2>Input 输入框</h2>

@@ -23,6 +23,10 @@ class ShowNotification extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Notification';
+  }
+
   render() {
     return <div className = "show-notification">
       <h2>Notification 通知</h2>

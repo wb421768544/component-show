@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './style/QuickStart.css';
 
 class QuickStart extends Component {
+  componentDidMount() {
+    document.title = 'QuickStart';
+  }
+
   render() {
     return (
       <div className = "quick-start">
@@ -40,9 +44,9 @@ class QuickStart extends Component {
 function Block(props) {
   return (
     <div className = "quick-start-block">
-      {props.title? <h3>{props.title}</h3>: null}
-      {props.introduce? <p>{props.introduce}</p>: null}
-      {props.code? <code>{props.code}</code>: null}
+      {props.title && <h3>{props.title}</h3>}
+      {props.introduce && <p>{props.introduce}</p>}
+      {props.code && <code>{props.code}</code>}
     </div>
   )
 }

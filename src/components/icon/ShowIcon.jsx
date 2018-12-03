@@ -25,6 +25,10 @@ class ShowIcon extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Icon';
+  }
+
   render() {
     return <div className = "show-icon">
       <h2>Icon 可爱的小图标</h2>

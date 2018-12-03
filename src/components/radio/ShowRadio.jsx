@@ -24,6 +24,10 @@ class ShowRadio extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Radio';
+  }
+
   render() {
     return <div className = "show-radio">
       <h2>Radio 单选框</h2>

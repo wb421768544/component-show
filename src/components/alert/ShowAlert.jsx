@@ -21,6 +21,10 @@ class ShowAlert extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Alert';
+  }
+
   render() {
     return <div className = "show-alert">
       <h2>Alert 警告</h2>

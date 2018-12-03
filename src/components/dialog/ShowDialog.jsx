@@ -28,6 +28,9 @@ class ShowDialog extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Dialog';
+  }
 
   render() {
     return <div className = "show-dialog">

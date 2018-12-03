@@ -22,6 +22,10 @@ class ShowTooltip extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Tooltip';
+  }
+
   render() {
     return <div className = "show-tooltip">
       <h2>Tooltip 文字提示</h2>

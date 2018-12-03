@@ -20,6 +20,10 @@ class ShowButton extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Button';
+  }
+
   render() {
     return <div className = "show-button">
       <h2>Button 按钮</h2>

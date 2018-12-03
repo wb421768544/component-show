@@ -26,6 +26,10 @@ class ShowSlider extends Component {
     }
   }
 
+  componentDidMount() {
+    document.title = 'Slider';
+  }
+
   render() {
     return <div className = "show-slider">
       <h2>Slider 滑动条</h2>

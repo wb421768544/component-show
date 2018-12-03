@@ -32,6 +32,10 @@ class ShowSwitch extends Component {
     this.setState({content: arg + ''});
   }
 
+  componentDidMount() {
+    document.title = 'Switch';
+  }
+
   render() {
     return <div className = "show-switch">
       <h2>Switch 开关</h2>

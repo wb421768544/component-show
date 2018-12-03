@@ -20,6 +20,10 @@ class ShowInputNumber extends Component {
     }
   }
 
+  componentDidMount() {
+    document.title = 'InputNumber';
+  }
+
   render() {
     return <div className = "show-input-number">
       <h2>Input Number 数字输入框</h2>

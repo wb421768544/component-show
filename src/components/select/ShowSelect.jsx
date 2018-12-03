@@ -26,6 +26,10 @@ class ShowSelect extends Component {
     };
   }
 
+  componentDidMount() {
+    document.title = 'Select';
+  }
+
   render() {
     return <div className = "show-select">
       <h2>Select 选择器</h2>
